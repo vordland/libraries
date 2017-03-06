@@ -1,0 +1,5 @@
+H:\libraries\words_of_alphabet\words_of_alphabet\bin\Debug\words_of_alphabet.dll
+H:\libraries\words_of_alphabet\words_of_alphabet\bin\Debug\words_of_alphabet.pdb
+H:\libraries\words_of_alphabet\words_of_alphabet\obj\Debug\words_of_alphabet.csprojResolveAssemblyReference.cache
+H:\libraries\words_of_alphabet\words_of_alphabet\obj\Debug\words_of_alphabet.dll
+H:\libraries\words_of_alphabet\words_of_alphabet\obj\Debug\words_of_alphabet.pdb
