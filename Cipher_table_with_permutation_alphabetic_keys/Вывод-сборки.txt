@@ -1,3 +1,0 @@
-﻿1>------ Сборка начата: проект: Cipher_table_with_permutation_alphabetic_keys, Конфигурация: Debug Any CPU ------
-1>  Cipher_table_with_permutation_alphabetic_keys -> H:\8 sem\Enciphering\Cipher_table_with_permutation_alphabetic_keys\Cipher_table_with_permutation_alphabetic_keys\bin\Debug\Cipher_table_with_permutation_alphabetic_keys.dll
-========== Сборка: успешно: 1, с ошибками: 0, без изменений: 0, пропущено: 0 ==========

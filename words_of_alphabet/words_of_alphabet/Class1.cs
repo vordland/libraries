@@ -7,7 +7,15 @@ namespace words_of_alphabet
 {
     public class WOA
     {
-        //привет git нужно что-то изменить
+        string alf= "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+        public string Get_encip_text (string dictionary_of_text,string cip_text)
+        {
+            for (int i=0,max=1;;i++)
+            {
 
+            }
+
+            return "";
+        }
     }
 }
