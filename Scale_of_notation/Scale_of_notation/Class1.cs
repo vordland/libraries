@@ -23,12 +23,14 @@ namespace Scale_of_notation
         {
             for (int i=0;obj2>0;i++)
             {
+                if (i==obj1.Get_lenght())
+                    Array.Resize(ref obj1.number, obj1.number.Length + 1);
                 obj1.number[i] = obj1.number[i] + obj2;
                 if(obj1.number[i]>obj1.scale-1)
                 {
-                    obj2 = obj1.number[i] - obj1.scale;
-                    obj1.number[i] = 0;
-                    Array.Resize(ref obj1.number, obj1.number.Length + 1);
+                    obj2 = (obj1.number[i] - obj1.number[i] % obj1.scale)/obj1.scale;
+                    obj1.number[i] = obj1.number[i] % obj1.scale;
+                    
                 }
                 else
                 {
