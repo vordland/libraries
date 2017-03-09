@@ -7,11 +7,10 @@ namespace Cipher_table_with_permutation_alphabetic_keys
 {
     public class Code
     {
-        string alf_high = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
-        string alf_low = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
-        
-        public string Ciphering_text(string original_text, string key_text)
+        public static string Ciphering_text(string original_text, string key_text)
         {
+            string alf_high = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
+            string alf_low = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
             int max = (int)Math.Ceiling((double)(original_text.Length) / (key_text.Length));//количество строк
             string[,] table = new string[key_text.Length, max];
             string new_text = "";
@@ -50,7 +49,7 @@ namespace Cipher_table_with_permutation_alphabetic_keys
 
                     if ((k == original_text.Length) || (k > original_text.Length))
                     {
-                        table[i, j] = "1";
+                        table[i, j] = " ";
                     }
                     else
                     {
@@ -71,8 +70,10 @@ namespace Cipher_table_with_permutation_alphabetic_keys
             }
             return new_text;
         }
-        public string Enciphering_text(string original_text, string key_text)
+        public static string Enciphering_text(string original_text, string key_text)
         {
+            string alf_high = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
+            string alf_low = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
             int max = (int)Math.Ceiling((double)(original_text.Length) / (key_text.Length));//количество строк
             string[,] table = new string[key_text.Length, max];
             string new_text = "";
@@ -111,7 +112,7 @@ namespace Cipher_table_with_permutation_alphabetic_keys
 
                     if ((k == original_text.Length)|| (k > original_text.Length))
                     {
-                        table[i, j] = "1";
+                        table[j,i] = " ";
                     }
                     else
                     {

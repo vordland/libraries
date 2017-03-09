@@ -28,10 +28,19 @@ namespace Scale_of_notation
                 {
                     obj2 = obj1.number[i] - obj1.scale;
                     obj1.number[i] = 0;
+                    Array.Resize(ref obj1.number, obj1.number.Length + 1);
                 }
-                Array.Resize(ref obj1.number, obj1.number.Length);
+                else
+                {
+                    obj2 = 0;
+                }
+                
             }
             return obj1;
+        }
+        public int Get_lenght()
+        {
+            return number.Length;
         }
     }
 }
